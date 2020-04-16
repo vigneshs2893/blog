@@ -1,0 +1,165 @@
+//FONT_FAMILY
+@import url("https://fonts.googleapis.com/css?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Muli:400,500&display=swap");
+// @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+
+$font-primary: 'Varela Round', sans-serif;
+$font-secondary: 'Muli', sans-serif;
+
+// FONT-WEIGHTS
+$regular: 400;
+$semi-bold: 600;
+$bold: 700;
+
+// FONT-SIZES
+$micro: 10px;
+$micro-secondary: 12px;
+$mini: 13px;
+$small: 15px;
+$base: 16px; // default
+$medium: 18px;
+$large-small: 21px;
+$large-medium: 22px;
+$large: 26px;
+$x-large: 28px;
+
+// COLORS
+$primary-color: #2B377A;
+$secondary-color: #39DBFF;
+$accent-1: #525252;
+$accent-2: #7D7D7D;
+
+// BREAKPOINTS
+$xs: "max-width: 767px"; // MOBILE
+$sm: "min-width: 768px";
+$md: "min-width: 992px";
+$lg: "min-width: 1200px";
+
+// DEFAULT RESETS
+*,
+*::before,
+*::after {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: 0 none;
+}
+button {
+  &.btn {
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+.hover_underline {
+  &:hover {
+    @media($md) {
+      text-decoration: underline;
+    }
+  }
+}
+b,
+strong {
+  @extend .bold;
+}
+img {
+  max-width: 100%;
+}
+.fw {
+  width: 100%;
+}
+.scroll-locked {
+  overflow: hidden;
+}
+
+input {
+  &:focus {
+    outline: 0;
+  }
+}
+
+// SPACER
+$spacer: 8px;
+
+//FONT WEIGHT CLASSES
+.regular {
+  font-weight: $regular;
+}
+.medium {
+  font-weight: $medium;
+}
+.semi-bold {
+  font-weight: $semi-bold;
+}
+.bold {
+  font-weight: $bold;
+}
+
+// BOTTOM MARGIN SPACERS
+.mb-8 {
+  margin-bottom: $spacer;
+}
+.mb-16 {
+  margin-bottom: floor($spacer * 2);
+}
+.mb-24 {
+  margin-bottom: floor($spacer * 3);
+}
+.mb-32 {
+  margin-bottom: floor($spacer * 4);
+}
+.mb-40 {
+  margin-bottom: floor($spacer * 5);
+}
+
+// TOP MARGIN SPACERS
+.mt-8 {
+  margin-top: $spacer;
+}
+.mt-16 {
+  margin-top: floor($spacer * 2);
+}
+.mt-24 {
+  margin-top: floor($spacer * 3);
+}
+.mt-32 {
+  margin-top: floor($spacer * 4);
+}
+
+.mlr-auto {
+  margin: 0 auto;
+}
+
+
+.justify-center {
+  justify-content: center;
+}
+
+.vertical-center {
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.vertical-bottom {
+  display: -ms-flexbox;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.lg-container {
+  @media ($md) {
+    width: 1176px;
+  }
+}

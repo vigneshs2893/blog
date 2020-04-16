@@ -1,0 +1,21 @@
+{
+  "title": "Pentafox | Blog",
+  "footer": {
+    "email": "hello@pentafox.in",
+    "mobile": "+91 90432 69523",
+    "address": {
+      "mobile": [
+        "Pentafox Technologies Pvt Ltd 91springboard, 5th floor, Trifecta Adatto, ITPL main road, Garudacharpalya, Bengaluru 560048"
+      ],
+      "desktop": [
+        "Pentafox Technologies Pvt Ltd",
+        "91springboard, 5th floor, Trifecta Adatto,",
+        "ITPL main road, Garudacharpalya",
+        "Bengaluru 560048"
+      ]
+    },
+    "facebook": "https://www.facebook.com/pentafox.in",
+    "linkedin": "https://linkedin.com/company/pentafox-tech",
+    "prodjar": "../../src/images/prodjar.png"
+  }
+}
