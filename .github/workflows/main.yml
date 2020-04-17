@@ -27,6 +27,10 @@ jobs:
         NODE_ENV: ${{ secrets.NODE_ENV }}
         API_URL: ${{ secrets.API_URL }}
         GA_TRACKING_ID: ${{ secrets.GA_TRACKING_ID }}
+    - name: Install dependencies and Build
+      run: |
+        yarn
+        npm run build
     - name: Gatsby Publish
       uses: enriikke/gatsby-gh-pages-action@v2.1.1
       with:
